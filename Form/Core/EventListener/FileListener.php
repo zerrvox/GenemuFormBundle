@@ -84,9 +84,9 @@ class FileListener implements EventSubscriberInterface
         if (is_file($path)) {
             $handle = new File($path);
 
-            if (preg_match('/image/', $handle->getMimeType())) {
-                $handle = new Image($handle->getPathname());
-            }
+            //if (preg_match('/image/', $handle->getMimeType())) {
+            //    $handle = new Image($handle->getPathname());
+            //}
 
             return $handle;
         }
